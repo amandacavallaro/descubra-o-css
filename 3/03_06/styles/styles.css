@@ -1,0 +1,40 @@
+/* Exemplos demonstrando diversas formas
+   de escrever a mesma cor laranja */
+
+/* Valor: Nome */
+h1 {
+    color: hsl(39, 100%, 50%);
+}
+
+/* Valor: Hexadecimal */
+h1 {
+    color: #ffa500;
+}
+
+/* Valor: RGB */
+h1 {
+    color: rgb(255, 165, 0);
+}
+
+/* Valor: HSL */
+h1 {
+    color: hsl(39, 100%, 50%);
+}
+
+/* Exemplo de Opacidade */
+div {
+    opacity: 0.5;
+}
+
+/* Exemplos com Canal Alpha */
+
+/* Valor: RGBA. Nível de transparência: 50% */
+h1 {
+    color: rgba(255, 165, 0.5);
+}
+
+/* Valor: HSLA. Nível de transparência: 60% */
+
+h1 {
+    color: hsla(39, 100%, 50%, 0.6);
+}

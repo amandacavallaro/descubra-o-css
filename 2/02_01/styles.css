@@ -1,0 +1,8 @@
+/* Exemplo de regra @
+*  Ela que tem como alvo telas de tamanhos específicos.
+*/
+@media only screen and (min-device-width: 684px) {
+    .container {
+        font-size: 24px;
+    }
+}

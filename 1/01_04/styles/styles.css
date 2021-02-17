@@ -1,0 +1,16 @@
+body {
+    background-color: lightblue;
+}
+
+h1 {
+    color: green;
+}
+
+ul {
+    background-color: white;
+}
+
+li {
+    color: purple;
+    list-style: none;
+}
