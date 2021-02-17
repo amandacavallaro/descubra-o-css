@@ -1,0 +1,18 @@
+.container {
+    background-color: lightblue;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.caixa-interna {
+    /* border: 4px dashed red; */
+    outline: 4px solid blue;
+    border-width: 4px;
+    border-style: dashed;
+    border-color: red;
+    background-color: lightpink;
+    height: 20px;
+    padding: 20px;
+}

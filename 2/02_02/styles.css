@@ -1,0 +1,11 @@
+h1 ~ p {
+    color: green;
+}
+
+p + span {
+    background-color: yellow;
+}
+
+ul > li {
+    color: blue;
+}

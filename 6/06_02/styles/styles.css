@@ -1,0 +1,237 @@
+/* INFORMAÇÕES PRESENTES NESTE DOCUMENTO
+	- Document: Ponto do Refresco
+	- Version:  1.0.0
+	- Author:   A. CAVALLARO
+*/
+
+/* CORES
+    - Cor do texto do nav         #9aa1b1
+    - Cor do texto especial       #f42f2c
+	- Cor do texto do body        black
+	- Cor do texto do review      #f0f0f0
+	- Cor das áspas do review     #f42f2c
+*/
+
+/* FONTES
+	- Texto padrão do body        Roboto, sans-serif
+	- Texto do h1,h2,h3           Oswald, serif
+*/
+
+/* ===============
+   Estilos globais
+   =============== */
+
+:root {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, outros */
+    -moz-box-sizing: border-box; /* Firefox, outros */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: #dfdfdf;
+    font-family: 'Roboto', sans-serif;
+}
+
+body * + * {
+    margin: 0.5em;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+@media (min-width: 684px) {
+    .container {
+        max-width: 684px;
+    }
+}
+
+@media (min-width: 972px) {
+    .container {
+        max-width: 972px;
+    }
+}
+
+/* ===============
+   Menu de Navegação
+   =============== */
+
+.site-nav {
+    display: flex;
+    padding: 0.5em;
+    list-style-type: none;
+    background-color: #f9f9ff;
+    border-radius: 0.2em;
+}
+
+.site-nav > li {
+    margin: 0;
+    padding: 0.1em 0.2em;
+}
+
+.site-nav > li > a {
+    display: block;
+    padding: 0.4em 0.2em;
+    background-color: #eee;
+    color: #9aa1b1;
+    text-decoration: none;
+}
+
+.site-nav > li > a:hover {
+    color: white;
+    background-color: #f42f2c;
+    border: 1px dashed white;
+}
+
+.nav-right > a:nth-child(1) {
+    background-color: #f42f2c;
+    color: white;
+}
+
+.nav-right > a:nth-child(1):hover {
+    color: #f42f2c;
+    background-color: white;
+    border: 1px dashed #f42f2c;
+}
+
+@media (min-width: 684px) {
+    .site-nav > li {
+        margin-top: 0;
+    }
+    .site-nav > li > a {
+        display: block;
+        padding: 0.5em 1em;
+    }
+    .site-nav > .nav-right {
+        margin-left: auto;
+    }
+    .site-nav > li + li {
+        margin-left: 1.5em;
+    }
+}
+
+/* ===============
+   Main - Conteúdo principal
+   =============== */
+
+.row {
+    flex-direction: column;
+}
+
+.row > * + * {
+    margin-top: 0;
+}
+
+.column {
+    padding: 1.5em;
+    margin-bottom: 1em;
+    background-color: white;
+}
+
+@media (min-width: 972px) {
+    .row {
+        flex-direction: row;
+    }
+}
+
+/* ===============
+   Section
+   =============== */
+
+.column-main {
+    flex: 1;
+    background-color: #f9f9ff;
+}
+
+q::before,
+q::after {
+    color: #f42f2c;
+}
+
+@media (min-width: 972px) {
+    .column-main {
+        flex: 2;
+    }
+}
+
+/* ===============
+   Contêiner com imagens de bebidas
+   =============== */
+
+.bebida {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item {
+    text-align: center;
+    justify-content: center;
+    flex: 2;
+    margin: 0 0 10px 0;
+    position: relative;
+}
+
+.item p {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+@media (min-width: 972px) {
+    .bebida {
+        flex-direction: row;
+    }
+}
+
+/* ===============
+   Aside
+   =============== */
+
+.column-sidebar {
+    flex: 1;
+    flex-direction: row;
+    margin: 0 0 0.5em 0;
+    line-height: 120%;
+}
+
+@media (min-width: 684px) {
+    .column-sidebar {
+        margin: 0.5em 0 0 0;
+    }
+}
+
+@media (min-width: 972px) {
+    .row {
+        display: flex;
+    }
+    .column-sidebar {
+        margin: 0 0 1em 1.5em;
+    }
+}
+
+/* ===============
+   Footer
+   =============== */
+
+footer {
+    display: flex;
+    padding: 0.5em;
+    list-style-type: none;
+    background-color: #f9f9ff;
+    border-radius: 0.2em;
+}

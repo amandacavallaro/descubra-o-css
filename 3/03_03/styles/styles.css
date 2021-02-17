@@ -1,0 +1,35 @@
+.container {
+    width: 300px;
+    height: 100px;
+    border: solid #6cc344 3px;
+    background-color: #90ee90;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Exemplo border-box */
+.exemplo-border-box {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid orange;
+    box-sizing: border-box;
+    background-color: rgba(209, 122, 122, 0.877);
+}
+
+/* Exemplo content-box */
+.exemplo-content-box {
+    width: 100%;
+    padding: 10px;
+    border: 3px solid orange;
+    box-sizing: content-box;
+    background-color: yellow;
+}
+
+/* h3 {
+    margin: 0 auto;
+    width: 272px;
+    height: 60px;
+    border: solid red 4px;
+    padding: 10px;
+    background-color: #e690ee;
+} */

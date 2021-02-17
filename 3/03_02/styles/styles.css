@@ -1,0 +1,17 @@
+/* Fontes */
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+
+div.content {
+    font-size: 10pt;
+}
+
+div.menu {
+    font-size: 150%;
+}
