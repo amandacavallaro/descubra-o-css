@@ -8,24 +8,16 @@
    Estilos globais
    =============== */
 
-body {
-    background-color: #dfdfdf;
-}
+body {}
 
 /* ===============
    Menu de Navegação
    =============== */
 
-.site-nav {
-    list-style-type: none;
-    background-color: #f9f9ff;
-}
+.site-nav {}
 
 /* ===============
    Main - Conteúdo principal
    =============== */
 
-.bebida {
-    list-style-type: none;
-    background-color: #f9f9ff;
-}
+.bebida {}
